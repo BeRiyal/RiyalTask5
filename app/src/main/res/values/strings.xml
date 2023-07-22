@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">RiyalTask5</string>
-    <string name="name">Name</string>
-    <string name="email">Email</string>
-    <string name="phone_number">Phone Number</string>
+    <string name="pname">Name</string>
+    <string name="pcode">Code</string>
+    <string name="pprice">Price</string>
     <string name="submit">S  U  B  M  I  T</string>
 </resources>

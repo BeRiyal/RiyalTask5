@@ -21,7 +21,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/name"
+        android:hint="@string/pname"
         app:boxBackgroundMode="outline"
         app:boxStrokeColor="@color/black"
         app:hintTextColor="@color/hint_txt_color"
@@ -31,13 +31,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:id="@+id/et_name"/>
+            android:id="@+id/et_Pname"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/email"
+        android:hint="@string/pcode"
         app:boxBackgroundMode="outline"
         app:boxStrokeColor="@color/black"
         app:hintTextColor="@color/hint_txt_color"
@@ -47,13 +47,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:id="@+id/et_email"/>
+            android:id="@+id/et_pCode"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/phone_number"
+        android:hint="@string/pprice"
         app:boxBackgroundMode="outline"
         app:boxStrokeColor="@color/black"
         app:hintTextColor="@color/hint_txt_color"
@@ -63,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:id="@+id/et_phone"/>
+            android:id="@+id/et_pPrice"/>
     </com.google.android.material.textfield.TextInputLayout>
     <LinearLayout
         android:layout_width="match_parent"

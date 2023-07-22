@@ -31,13 +31,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 SharedPreferences.Editor prefEdit = sharedPreferences.edit();
 
-                prefEdit.putString("name", mainBinding.etName.getText().toString().trim());
-                prefEdit.putString("email", mainBinding.etEmail.getText().toString().trim());
-                prefEdit.putString("phone", mainBinding.etPhone.getText().toString().trim());
+                prefEdit.putString("Pname", mainBinding.etPname.getText().toString().trim());
+                prefEdit.putString("Pcode", mainBinding.etPCode.getText().toString().trim());
+                prefEdit.putString("Pprice", mainBinding.etPPrice.getText().toString().trim());
 
                 prefEdit.apply();
 
-                Intent toDetails = new Intent(this,Details.class);
+                Intent toDetails = new Intent(this, DetailsActivity.class);
                 startActivity(toDetails);
 
             }
@@ -45,26 +45,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private boolean isValid() {
-        if(mainBinding.etName.getText().toString().trim().isEmpty()){
-            mainBinding.etName.setError("Can't be empty");
+        if(mainBinding.etPname.getText().toString().trim().isEmpty()){
+            mainBinding.etPname.setError("Can't be empty");
             return false;
         }
         else {
-            mainBinding.etName.setError(null);
+            mainBinding.etPCode.setError(null);
         }
-        if(mainBinding.etEmail.getText().toString().trim().isEmpty()){
-            mainBinding.etEmail.setError("Can't be empty");
+        if(mainBinding.etPCode.getText().toString().trim().isEmpty()){
+            mainBinding.etPCode.setError("Can't be empty");
             return false;
         }
         else {
-            mainBinding.etName.setError(null);
+            mainBinding.etPCode.setError(null);
         }
-        if(mainBinding.etPhone.getText().toString().trim().isEmpty()){
-            mainBinding.etPhone.setError("Can't be empty");
+        if(mainBinding.etPPrice.getText().toString().trim().isEmpty()){
+            mainBinding.etPPrice.setError("Can't be empty");
             return false;
         }
         else {
-            mainBinding.etName.setError(null);
+            mainBinding.etPPrice.setError(null);
         }
         return true;
     }

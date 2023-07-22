@@ -5,12 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 import com.example.riyaltask5.databinding.ActivityDetailsBinding;
 
-public class Details extends AppCompatActivity {
+public class DetailsActivity extends AppCompatActivity {
 
     ActivityDetailsBinding detailsBinding;
     @SuppressLint("SetTextI18n")
@@ -27,9 +26,9 @@ public class Details extends AppCompatActivity {
     }
     private void init(){
         SharedPreferences sharedPreferences = getSharedPreferences("LoginSharedPref", MODE_PRIVATE);
-        String name = sharedPreferences.getString("name", "");
-        String email = sharedPreferences.getString("email", "");
-        String phone = sharedPreferences.getString("phone", "");
-        detailsBinding.tvView.setText("Name : " + name + "\n Email : " + email + "\n Phone : " + phone);
+        String PName = sharedPreferences.getString("Pname", "");
+        String PCode = sharedPreferences.getString("Pcode", "");
+        String PPrice = sharedPreferences.getString("Pprice", "");
+        detailsBinding.tvView.setText("Name : " + PName + "\n Code : " + PCode + "\n Price : $ " + PPrice);
     }
 }

@@ -70,5 +70,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     private void init(){
         mainBinding.btnSubmit.setOnClickListener(this);
+
     }
 }

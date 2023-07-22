@@ -30,7 +30,6 @@ public class Details extends AppCompatActivity {
         String name = sharedPreferences.getString("name", "");
         String email = sharedPreferences.getString("email", "");
         String phone = sharedPreferences.getString("phone", "");
-        Log.d("sdsdsd",name);
         detailsBinding.tvView.setText("Name : " + name + "\n Email : " + email + "\n Phone : " + phone);
     }
 }
